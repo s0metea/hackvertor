@@ -155,12 +155,6 @@ private Ngrams ngrams;
         JPanel topBar = new JPanel(new GridBagLayout());
         topBar.setPreferredSize(new Dimension(-1, 110));
         topBar.setMinimumSize(new Dimension(-1, 110));
-        JLabel logoLabel;
-        if(isDarkTheme) {
-            logoLabel = new JLabel(createImageIcon("/images/logo-dark.png", "logo"));
-        } else {
-            logoLabel = new JLabel(createImageIcon("/images/logo-light.png", "logo"));
-        }
         final JTextArea hexView = new JTextArea();
         hexView.setRows(0);
         hexView.setOpaque(true);
@@ -449,7 +443,6 @@ private Ngrams ngrams;
         c.anchor = FIRST_LINE_END;
         c.ipadx = 20;
         c.ipady = 20;
-        topBar.add(logoLabel,c);
         c = createConstraints(0, 0, 1);
         c.anchor = FIRST_LINE_START;
         c.fill = BOTH;
